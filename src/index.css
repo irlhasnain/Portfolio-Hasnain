@@ -1,0 +1,32 @@
+@import url('https://db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-cream font-hn antialiased;
+  }
+}
+
+@layer utilities {
+  .anim-fade-in { @apply animate-fade-in; }
+  .anim-rise-in { @apply animate-rise-in; }
+  .anim-fade-up { @apply animate-fade-up; }
+  .anim-line { @apply animate-line origin-left; }
+  .marquee { @apply animate-marquee; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .anim-fade-in,
+    .anim-rise-in,
+    .anim-fade-up,
+    .anim-line,
+    .marquee {
+      animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
+      transition-duration: 0.01ms !important;
+      transition-delay: 0ms !important;
+    }
+  }
+}
