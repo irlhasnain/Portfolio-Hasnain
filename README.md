@@ -112,11 +112,11 @@ python remove_bg.py
 
 ## Contributing
 
-This is a personal portfolio project, but suggestions and issues are always welcome — feel free to open an [issue](../../issues) or submit a pull request.
+This is a personal portfolio project and not open for external contributions. However, if you spot a bug, feel free to open an [issue](../../issues).
 
 ## License
 
-This project is open source and available for reference. Feel free to fork it for your own portfolio!
+This is a personal and custom-built portfolio project. All rights reserved — this code is not licensed for public/open-source use, copying, or redistribution.
 
 ## Contact
 
