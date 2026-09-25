@@ -1,32 +1,130 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Hasnain's Portfolio
 
-Currently, two official plugins are available:
+### A modern, fast, and minimal personal portfolio built with React & TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-## React Compiler
+[Live Demo](#) · [Report Bug](../../issues) · [Request Feature](../../issues)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## About
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+This repository contains the source code for my personal portfolio website — a space to showcase my projects, skills, and experience with a clean, fast, and responsive interface.
+
+## Tech Stack
+
+| Category | Technology |
+|---|---|
+| **Framework** | React 19 |
+| **Language** | TypeScript |
+| **Build Tool** | Vite |
+| **Styling** | Tailwind CSS |
+| **Routing** | React Router DOM |
+| **Icons** | Lucide React |
+| **Linting** | Oxlint |
+| **Utilities** | clsx, tailwind-merge |
+
+## Project Structure
+
+```
+Portfolio-Hasnain/
+├── public/              # Static assets (images, favicon, etc.)
+├── src/                 # Application source code
+├── remove_bg.py         # Utility script to remove white backgrounds from images
+├── requirements.txt     # Python dependencies for remove_bg.py
+├── tailwind.config.js   # Tailwind CSS configuration
+├── vite.config.ts       # Vite configuration
+└── package.json         # Project dependencies & scripts
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/irlhasnain/Portfolio-Hasnain.git
+
+# Move into the project directory
+cd Portfolio-Hasnain
+
+# Install dependencies
+npm install
+```
+
+### Running Locally
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`.
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Image Background Removal Script
+
+This project includes a small Python utility (`remove_bg.py`) to strip white backgrounds from images before adding them to `public/`.
+
+### Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+```bash
+python remove_bg.py
+```
+
+> Edit the input/output paths inside `remove_bg.py` to point to your own image.
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Type-check and build for production |
+| `npm run lint` | Run Oxlint on the codebase |
+| `npm run preview` | Preview the production build locally |
+
+## Contributing
+
+This is a personal portfolio project, but suggestions and issues are always welcome — feel free to open an [issue](../../issues) or submit a pull request.
+
+## License
+
+This project is open source and available for reference. Feel free to fork it for your own portfolio!
+
+## Contact
+
+**Hasnain**
+GitHub — [@irlhasnain](https://github.com/irlhasnain)
+
+---
+
+<div align="center">
+<sub>Built and maintained by Hasnain</sub>
+</div>
